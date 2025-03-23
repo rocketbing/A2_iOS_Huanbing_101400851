@@ -29,22 +29,9 @@
 		94FCBD012D90853B005C7B6F /* A2_iOS_Huanbing_101400851UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A2_iOS_Huanbing_101400851UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		94FCBD092D90853B005C7B6F /* Exceptions for "A2_iOS_Huanbing_101400851" folder in "A2_iOS_Huanbing_101400851" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 94FCBCE02D908539005C7B6F /* A2_iOS_Huanbing_101400851 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		94FCBCE32D908539005C7B6F /* A2_iOS_Huanbing_101400851 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				94FCBD092D90853B005C7B6F /* Exceptions for "A2_iOS_Huanbing_101400851" folder in "A2_iOS_Huanbing_101400851" target */,
-			);
 			path = A2_iOS_Huanbing_101400851;
 			sourceTree = "<group>";
 		};
