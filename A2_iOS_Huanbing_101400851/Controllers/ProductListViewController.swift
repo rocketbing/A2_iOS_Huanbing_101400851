@@ -44,6 +44,18 @@ class ProductListViewController: UITableViewController {
         }
     }
     
-   
+    // Search functionality
+    @IBAction func searchProducts(_ sender: UISearchBar) {
+        let searchTerm = sender.text ?? ""
+        let fetchRequest: NSFetchRequest<Product> = Product.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "productName CONTAINS[cd] %@ OR productDescription CONTAINS[cd] %@", searchTerm, searchTerm)
+        
+        do {
+            products = try context.fetch(fetchRequest)
+            tableView.reloadData()
+        } catch {
+            print("Failed to search products: \(error)")
+        }
+    }
 }
 
