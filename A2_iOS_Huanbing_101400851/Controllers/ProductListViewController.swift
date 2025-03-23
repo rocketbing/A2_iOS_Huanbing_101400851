@@ -34,6 +34,16 @@ class ProductListViewController: UITableViewController {
         return cell
     }
     
+    // Navigation to Detail View Controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showProductDetail" {
+            let productDetailVC = segue.destination as! ProductDetailViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                productDetailVC.product = products[indexPath.row]
+            }
+        }
+    }
     
+   
 }
 
